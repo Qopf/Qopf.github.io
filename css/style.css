@@ -329,7 +329,7 @@ th, td {
 }
 
 th {
-  background-color:lightskyblue;
+  background-color:#AEE8F5;
 }
 
 tr:hover {
@@ -689,7 +689,7 @@ th, td {
 }
 
 th {
-  background-color:lightskyblue;
+  background-color:#AEE8F5;
 }
 
 tr:hover {
@@ -1029,8 +1029,8 @@ th, td {
   text-align: left;
   border-bottom: 1px solid #ddd;
  padding: 20px .625em .625em .625em;
-        height: 60px;
-        vertical-align: middle;
+ height: 60px;
+  vertical-align: middle;
         box-sizing: border-box;
         overflow-x: hidden;
         overflow-y: auto;
@@ -1040,8 +1040,9 @@ th, td {
 }
 
 th {
-  background-color: #4caf50;
-  color: white;
+    background-color:#AEE8F5;
+
+  color: black;
 }
 
 tr:hover {
