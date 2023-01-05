@@ -398,6 +398,7 @@ th + th{
 }
 #ProductAsideimg1{
     grid-area: ProductAsideimg1;
+
 }
 #ProductAsideimg2{
     grid-area: ProductAsideimg2;
@@ -442,6 +443,7 @@ th + th{
 
     #Productimage-container{
     grid-area: Productimage-container;
+    gap: 20px;
     display: grid;
     column-gap: 5%;
     float: right;
@@ -662,10 +664,11 @@ th + th{
 }
 
 
+}
+
 #priceimg1{
 	grid-area: 	priceimg1;
-	display: none;
-}
+	}
 #priceimg2{
 	grid-area: 	priceimg2;
 }
