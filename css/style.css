@@ -1,0 +1,1129 @@
+img {
+	width: 200px;
+	height: 200px;
+}
+p {word-spacing: normal;
+text-indent: 50px;
+line-height: 1.4;
+font-family: Arial, Helvetica, sans-serif;
+}
+p::first-letter {
+  color: #000000;
+  font-size: large;
+}
+h1 {
+	letter-spacing: 3px;
+	font-family: 'Notable', sans-serif; 
+}
+h2{
+	letter-spacing: 2px;
+	font-family: 'Notable', sans-serif; 
+}
+
+body{
+		font-family: Arial, Helvetica, sans-serif;
+}
+h4{
+	text-transform: uppercase
+}
+
+
+#body-footer{
+	position: relative;
+}
+.pantone-123c-cmyk {
+	color: #FFC72B;
+	}
+
+.forcmykstyle{
+	  color: tomato;
+
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-small {
+	font-size: small;
+}
+
+#content-container {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+#aside-container {
+	width: 33vw;
+}
+
+#logo {
+    max-height: 6.25em;
+    height: 6.25em;
+    margin: 0.43em;
+}
+
+#video {
+	width: 100%;
+}
+
+
+#cookie {
+    color:#FFF;
+    position: fixed;
+    background-color: #FA0;
+    opacity: 50%;
+    z-index:9999;
+    right: 0;
+    bottom:0;
+    padding: 1em 0;
+    text-align: center;
+    width: 33.3vw;
+}
+
+.sport-tech {
+	clear: both;
+}
+
+
+/* -------------NAVBAR START FROMHERE ---------------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 0 20px;
+}
+
+/* Links */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+/* Logo */
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* -------------END NAVBAR END ---------------------- */
+
+
+
+/* PC */
+@media screen and (min-width: 1280px) {
+	/* PC INDEX */
+	main {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	#movie-container {
+		width: 100%;
+	}
+
+	#content-container {
+		width: 66%;
+	}
+
+	.image-container {
+		clear: left;
+		float: right;
+		margin: 1.33em 1em 1em;
+	}
+
+
+	#aside-container {
+		float: right;
+	}
+
+#sport-tech-2{
+	background-color: gray;
+	border-radius: 6px;
+}
+
+
+	/* ====== PC Contact===== */
+
+
+
+#maincontact {
+	display: grid;
+	background-color: gray;
+	grid-area: maincontact;
+	justify-content: space-between;
+	grid-template-areas: 
+	"contactsection contactsection contactsection"
+	"formcontainer formcontainer asidecontactpage  "
+	"formcontainer formcontainer asidecontactpage  "
+	"formcontainer formcontainer asidecontactpage "
+	;
+}
+
+#contactsection{
+	grid-area: contactsection;
+	background-color: lightblue;
+
+}
+#asidecontactpage{
+	display: grid;
+	grid-area: asidecontactpage;
+	grid-template-areas: 
+	"ContactHeaderAside"
+	"contactaside3"
+	"contactaside2"
+	"contactaside1"
+	;
+	text-align: center;
+	float: right;
+	background-color: yellow;
+}
+#contactaside1{
+	grid-area: contactaside1;
+}  
+
+#contactaside2{
+	grid-area: contactaside2;
+
+} 
+#contactaside3{
+	grid-area: contactaside3;
+}   
+#ContactHeaderAside{
+	grid-area: ContactHeaderAside;
+}
+
+#formcontainer {
+	grid-area: formcontainer;
+	 width: 200%;
+    
+
+
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+
+/* Check this out again it break the code below #///
+/*  input[type="text"], input[type="email"], text  */
+
+
+
+
+	/* PC PRICING */
+
+
+#mainpricing	{
+	display: 	grid;
+	grid-area	: mainpricing;
+	grid-template-areas: 
+	"h1Prices h1Prices h1Prices"
+	"pPrices pPrices pPrices"
+	"tablecontainer  tablecontainer productAside"
+	"tablecontainer  tablecontainer productAside"
+	"tablecontainer  tablecontainer productAside"
+	"tablecontainer  tablecontainer productAside"
+	"tablecontainer  tablecontainer productAside"
+	"source source  productAside" ;
+
+
+}
+
+
+#productAside{
+	display: 	grid;
+	grid-area: 	productAside;
+	background-color: #ffc1cc		;
+	gap: 50px;
+    grid-template-areas:
+    "PricesHeaderAside"
+	"priceimg1"
+	"priceimg2"
+	"priceimg3"
+
+	;
+}
+
+
+
+
+#tablecontainer{
+	grid-area: tablecontainer;
+
+
+
+
+}
+
+#h1Prices{
+	grid-area: h1Prices;
+	background-color: azure;
+}
+#pPrices{
+	grid-area: pPrices;
+	background-color: 	white;
+}
+
+
+
+#table{
+	grid-area	:tableprice;
+    width: 100%;
+    height: 100%;
+    border-style: double;
+    border-color: tomato;
+    border-width: thick;
+   
+
+
+}
+#source{
+	grid-area: source;
+	background-color: 	#d3f0eb;
+}
+
+
+#productAside img {
+	width: 500px;
+	height: 350px;
+}
+
+
+#priceimg1{
+	grid-area: 	priceimg1;
+}
+#priceimg2{
+	grid-area: 	priceimg2;
+}
+#priceimg3{
+	grid-area: 	priceimg3;
+}
+
+
+
+
+table {
+      table-layout:fixed;
+  }
+
+ 
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  overflow:auto ; 
+    text-overflow: ellipsis; 
+   word-wrap: break-word;
+}
+
+th {
+  background-color:lightskyblue;
+}
+
+tr:hover {
+  background-color: gray  ;
+}
+
+td:first-child, th:first-child{
+    background-color:#FF0;}
+
+table tr:nth-child(even) {
+  background-color: #cbfcbd; /* Set the background color for even rows */
+}
+tr > td{
+	border-radius:12px ;
+	border-color:black;
+}
+td + td{
+border-color: black;
+	border-radius: 6px;
+
+}
+th + th{
+	border-radius: 15px;
+	border-color: darkblue;
+	border-style: double;
+}
+	
+
+
+/* PC PRODUCT*/
+
+#article1{
+    grid-area: art1;
+    background-color: tomato;
+
+;
+}
+
+#art1{
+	background-color: tomato;
+}
+#article2{
+    grid-area: art2;
+    background-color: #6ba3f0;
+}
+#article3{
+    grid-area: art3;
+    background-color:#cbfcbd;
+}
+#article4{
+    grid-area: art4;
+        background-color:#dfffd9;
+
+}
+#article5{
+    grid-area: art5;
+        background-color:#e5eae9;
+
+}
+#article6{
+    grid-area: art6;
+        background-color:fuchsia;
+
+}
+#ProductAsideimg1{
+    grid-area: ProductAsideimg1;
+}
+#ProductAsideimg2{
+    grid-area: ProductAsideimg2;
+}
+#ProductAsideimg3{
+    grid-area: ProductAsideimg3;
+
+}
+.header-productpage{
+	background-color: tomato;
+	grid-area: header;
+}
+
+
+#article-container{
+    display: grid;
+    padding: 0%;
+    column-gap: 0%;
+    row-gap: 0%;
+    background-color:dimgray;
+    border-radius: 8px;
+    justify-content: space-between;
+    gap: 100px;
+    width: 100%;
+
+    grid-template-areas:
+  
+    "art2 art1 art3"
+    "art2 art1 art3"
+    "art5 art1 art3"
+    "art5 art1 art4"
+    "art5 art1 art4"
+    "art5 art1 art4"
+    "art5 art6 art6"
+    "Productimage-container Productimage-container Productimage-container"
+    "Productimage-container Productimage-container Productimage-container"
+    
+    }
+    
+
+
+
+    #Productimage-container{
+    grid-area: Productimage-container;
+    display: grid;
+    column-gap: 5%;
+    float: right;
+    grid-template-areas: 
+    "ProductAsideimg1 ProductAsideimg2 ProductAsideimg3"
+    "ProductAsideimg1 ProductAsideimg2 ProductAsideimg3"   
+    }
+}
+
+/* TABLET */ 
+@media only screen and (min-width: 481px) and (max-width: 1279px) {
+
+
+	/* TABLET INDEX */
+
+
+	.image-container {
+		float: left;
+		margin: 1.33em 1em 1em;
+	}
+
+
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#aside-container {
+		order: 1;
+	background-color: lightblue;
+
+	}
+
+	#movie-container {
+		order: 2;
+	}
+
+	#content-container {
+		order: 3;
+		float: left;
+
+	}
+
+	/* TABLET PRODUCT */
+
+#article1{
+    grid-area: art1;
+    background-color: tomato;
+}
+#article2{
+    grid-area: art2;
+    background-color: white;
+}
+#article3{
+    grid-area: art3;
+    background-color:aqua;
+}
+#article4{
+    grid-area: art4;
+        background-color:lightblue;
+
+}
+#article5{
+    grid-area: art5;
+        background-color:salmon;
+
+}
+#article6{
+    grid-area: art6;
+        background-color:fuchsia;
+
+}
+
+#ProductAsideimg1{
+    grid-area: ProductAsideimg1;
+}
+
+#ProductAsideimg2{
+    grid-area: ProductAsideimg2;
+}
+
+#ProductAsideimg3{
+    grid-area: ProductAsideimg3;
+    display: none;
+
+}
+
+
+#header-productpage{
+	background-color: tomato;
+	grid-area: header;
+}
+
+#figcaption3{
+	display: none;
+}
+#article-container{
+    display: grid;
+    padding: 0%;
+    column-gap: 0%;
+    row-gap: 0%;
+    background-color:dimgray;
+    border-radius: 2px;
+    justify-content: space-between;
+    gap:50px;
+
+    grid-template-areas:
+    "header header "
+    "art1 art2 "
+    "art1 art2 "
+    "art3 art2 "
+    "art3 art5 "
+    "art3 art5"
+    "art3 art5 "
+    "art6 art6"
+    "art6 art6"
+    "Productimage-container  Productimage-container"
+    "Productimage-container  Productimage-container"
+    
+    }
+    
+
+
+
+    #Productimage-container{
+    grid-area: Productimage-container;
+    display: grid;
+    float:right;
+    column-gap: 1%;
+    grid-template-areas: 
+    "ProductAsideimg1 ProductAsideimg2 "
+    "ProductAsideimg1 ProductAsideimg2 "   
+    }
+     .removetablet{
+    	display:none;
+    }
+
+  .removedesktoptablet{
+    	display: none;
+    }
+
+
+
+/* tablet pricing */
+
+
+
+#mainpricing	{
+	display: 	grid;
+	grid-area	: mainpricing;
+
+	grid-template-areas:
+	"h1Prices"
+	"pPrices"
+	"tablecontainer"
+	"source"
+	"productAside"
+
+
+ ;
+
+
+}
+
+
+#productAside{
+	display: 	grid;
+	text-align: center;
+	grid-area: 	productAside;
+	background-color: tomato		;
+    grid-template-areas:
+    "PricesHeaderAside  PricesHeaderAside "
+	"priceimg2 priceimg3"
+	
+	;
+	width: 100%;
+}
+
+
+
+#cite3{
+	display: none;
+}
+#tablecontainer{
+	grid-area: tablecontainer;
+
+}
+
+#h1Prices{
+	grid-area: h1Prices;
+	background-color: azure;
+}
+#pPrices{
+	grid-area: pPrices;
+	background-color: 	white;
+}
+
+
+
+#table{
+	grid-area	:tableprice;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: black;
+
+
+}
+#source{
+	grid-area: source;
+	background-color: 	greenyellow;
+}
+
+
+#productAside img {
+	width: 15rem;
+	height: 15rem;
+}
+
+
+#priceimg1{
+	grid-area: 	priceimg1;
+	display: none;
+}
+#priceimg2{
+	grid-area: 	priceimg2;
+}
+#priceimg3{
+	grid-area: 	priceimg3;
+}
+
+
+
+table {
+      table-layout:fixed;
+  }
+
+ 
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  overflow:auto ; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+}
+
+th {
+  background-color:lightskyblue;
+}
+
+tr:hover {
+  background-color: gray  ;
+}
+
+td:first-child, th:first-child{
+    background-color:#FF0;}
+
+table tr:nth-child(even) {
+  background-color: #cbfcbd; /* Set the background color for even rows */
+}
+tr > td{
+	border-radius:12px ;
+	border-color:black;
+}
+td + td{
+border-color: black;
+	border-radius: 6px;
+
+}
+th + th{
+	border-radius: 15px;
+	border-color: darkblue;
+	border-style: double;
+}
+
+
+
+
+/* -------------TABLET CONTACT ---------------------- */
+
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+input[type="text"], input[type="email"],
+
+#maincontact {
+	display: grid;
+	background-color: gray;
+	grid-area: maincontact;
+	justify-content: space-between;
+	grid-template-areas: 
+	"contactsection contactsection "
+	"formcontainer  asidecontactpage  "
+	"formcontainer  asidecontactpage  "
+	"formcontainer  asidecontactpage "
+	"formcontainer  asidecontactpage "
+
+	;
+}
+
+#contactsection{
+	grid-area: contactsection;
+	background-color: lightblue;
+
+}
+#asidecontactpage{
+	display: grid;
+	grid-area: asidecontactpage;
+	grid-template-areas: 
+	"ContactHeaderAside"
+	"contactaside3"
+	"contactaside2"
+	"contactaside1"
+	;
+	text-align: center;
+	float: right;
+	background-color: yellow;
+}
+#contactaside1{
+	grid-area: contactaside1;
+}  
+
+#contactaside2{
+	grid-area: contactaside2;
+
+} 
+#contactaside3{
+	grid-area: contactaside3;
+}   
+#ContactHeaderAside{
+	grid-area: ContactHeaderAside;
+}
+
+#formcontainer {
+	grid-area: formcontainer;
+	 width: 100%;
+    border: solid;
+
+
+} }
+
+@media screen and (max-width: 480px) {
+
+
+
+
+	/* MOBILE INDEX */
+
+
+	#movie-container{
+	display: none;
+}
+
+	.image-container {
+		display: block;
+		float: left;
+		margin: 1.33em 1em 1em;
+	}
+
+	#logo {
+		display: none;
+		flex-direction: column;
+	}
+
+
+   main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#aside-container {
+		order:1;
+		width:100% ;
+		background-color: lightblue;
+	}
+
+
+	#content-container {
+		order: 2;
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+
+
+
+	/* MOBILE PRODUCT */
+
+#article1{
+    grid-area: art1;
+    background-color: tomato;
+}
+#article2{
+    grid-area: art2;
+    background-color: white;
+}
+#article3{
+    grid-area: art3;
+    background-color:aqua;
+}
+#article4{
+    grid-area: art4;
+        background-color:lightblue;
+        display: none;
+
+}
+#article5{
+    grid-area: art5;
+        background-color:salmon;
+
+}
+#article6{
+    grid-area: art6;
+        background-color:fuchsia;
+        display: none;
+
+}
+
+#ProductAsideimg1{
+    grid-area: ProductAsideimg1;
+}
+
+#ProductAsideimg2{
+    grid-area: ProductAsideimg2;
+}
+
+#ProductAsideimg3{
+    grid-area: ProductAsideimg3;
+
+}
+
+#header-productpage{
+	background-color: tomato;
+	grid-area: header;
+}
+
+
+#article-container{
+    display: grid;
+    padding: 0%;
+    column-gap: 0%;
+    row-gap: 0%;
+    background-color:dimgray;
+    border-radius: 8px;
+    justify-content: space-between;
+    gap: 20px;
+
+    grid-template-areas:
+    "header  "
+    "art5  "
+    "art5  "
+    "art5 "
+    "art3  "
+    "art3 "
+    "art3  "
+    "art2"
+    "art2 "
+    "art2 "
+    "art1 "
+    "art1 "
+    "art1 "
+    "Productimage-container "
+    "Productimage-container "
+    "Productimage-container "
+    
+    }
+    
+
+
+
+    #Productimage-container{
+    grid-area: Productimage-container;
+    display: grid;
+    float:left;
+    column-gap: 5%;
+    grid-template-areas: 
+    "ProductAsideimg1  "
+    "ProductAsideimg2  "
+    "ProductAsideimg3 "     
+    }
+
+    .remove desktop tablet{
+    	display: block;
+    }
+
+	/* MOBILE PRICING */
+ #mainpricing	{
+	display: 	grid;
+	width: 100%;
+	text-align: right;
+	grid-area	: mainpricing;;
+	grid-template-areas:
+	"tablecontainer"
+	"source"
+	"productAside"
+
+
+ ;
+
+
+}
+
+
+#productAside{
+	display: 	grid;
+	text-align: left;
+	grid-area: 	productAside;
+	background-color: tomato		;
+    grid-template-areas:
+    "PricesHeaderAside   "
+	"priceimg1"
+	"priceimg2"
+	"priceimg3";
+	width: 100%;
+}
+
+
+
+#cite3{
+	display: none;
+}
+#tablecontainer{
+	grid-area: tablecontainer;
+
+}
+
+#h1Prices{
+	grid-area: h1Prices;
+	background-color: azure;
+	display: none;
+}
+#pPrices{
+	grid-area: pPrices;
+	background-color: 	white;
+	display: none;
+}
+
+
+
+#table{
+	grid-area	:tableprice;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: black;
+
+
+}
+#source{
+	grid-area: source;
+	background-color: 	greenyellow;
+	text-align: left;
+}
+
+
+#productAside img {
+	width: 15rem;
+	height: 15rem;
+}
+
+
+#priceimg1{
+	grid-area: 	priceimg1;
+	
+}
+#priceimg2{
+	grid-area: 	priceimg2;
+}
+#priceimg3{
+	grid-area: 	priceimg3;
+}
+
+
+
+
+table {
+      table-layout:fixed;
+  }
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+ padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+td:first-child, th:first-child{
+    background-color:#FF0;}
+
+table tr:nth-child(even) {
+  background-color: #cbfcbd; /* Set the background color for even rows */
+}
+tr > td{
+	border-radius:12px ;
+	border-color:black;
+}
+td + td{
+border-color: black;
+	border-radius: 6px;
+
+}
+th + th{
+	border-radius: 15px;
+	border-color: darkblue;
+	border-style: double;
+}
+	/* MOBILE CONTACT */
+
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+#maincontact {
+	display: grid;
+	grid-area: maincontact;
+	justify-content: space-between;
+	grid-template-areas: 
+	"contactsection  "
+	"formcontainer    "
+	"asidecontactpage    "
+	;
+}
+
+#contactsection{
+	grid-area: contactsection;
+	background-color: lightblue;
+
+}
+#asidecontactpage{
+	display: grid;
+	grid-area: asidecontactpage;
+	grid-template-areas: 
+	"ContactHeaderAside"
+	"contactaside3"
+	"contactaside2"
+	"contactaside1"
+	;
+	text-align: center;
+	float: right;
+	background-color: yellow;
+}
+#contactaside1{
+	grid-area: contactaside1;
+}  
+
+#contactaside2{
+	grid-area: contactaside2;
+
+} 
+#contactaside3{
+	grid-area: contactaside3;
+}   
+#ContactHeaderAside{
+	grid-area: ContactHeaderAside;
+}
+
+#formcontainer {
+	grid-area: formcontainer;
+	 width: 100%;
+    border: solid;
+}}
+
+
