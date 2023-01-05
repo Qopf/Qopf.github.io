@@ -89,11 +89,13 @@ h4{
 /* -------------NAVBAR START FROMHERE ---------------------- */
 nav {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
   color: #fff;
-  padding: 0 20px;
+  padding: 0 5px;
+  flex-direction: row;
 }
 
 /* Links */
@@ -788,6 +790,17 @@ input[type="text"], input[type="email"],
 @media screen and (max-width: 480px) {
 
 
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 0 5px;
+  flex-direction: column;
+}
+
 
 
 	/* MOBILE INDEX */
@@ -1029,14 +1042,14 @@ th, td {
   text-align: left;
   border-bottom: 1px solid #ddd;
  padding: 20px .625em .625em .625em;
- height: 60px;
+ height: 70px;
   vertical-align: middle;
-        box-sizing: border-box;
-        overflow-x: hidden;
-        overflow-y: auto;
-        width: 100px;
-        font-size: 13px;
-        text-overflow: ellipsis;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 80px;
+  font-size: 12px;
+   text-overflow: ellipsis;
 }
 
 th {
